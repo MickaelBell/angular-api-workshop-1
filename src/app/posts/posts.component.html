@@ -1,0 +1,13 @@
+<div>
+  <h1>Derniers Articles</h1>
+  <ul *ngFor="let aPost of myPosts">
+    <li>
+      <div class="card blue">
+        <h2>{{ aPost.title }}</h2>
+        <p>{{ aPost.body }}</p>
+        <a class="cta" [routerLink]="['/posts', aPost.id]" title="CTA">Lire l'article</a>
+      </div>
+    </li>
+  </ul>
+</div>
+

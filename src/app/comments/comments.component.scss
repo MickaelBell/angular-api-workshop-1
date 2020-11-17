@@ -1,0 +1,40 @@
+// div {
+//   text-align: center;
+// }
+div.comment {
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+  border-radius: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(0,174,239);
+  background: linear-gradient(135deg, rgba(0,174,239,1) 20%, rgba(45,56,138,1) 100%)
+}
+
+form {
+  font-family: system-ui;
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input {
+    padding: 0.9rem;
+    width: 300px;
+  }
+
+  button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    margin: 0.8rem 0.8rem;
+    border-radius: 4px;
+  }
+
+
+}
