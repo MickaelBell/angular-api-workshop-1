@@ -6,7 +6,6 @@ import { PostService } from '../services/post.service';
   selector: 'app-comments',
   templateUrl: './comments.component.html',
   styleUrls: ['./comments.component.scss'],
-  // changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CommentsComponent implements OnInit {
 
