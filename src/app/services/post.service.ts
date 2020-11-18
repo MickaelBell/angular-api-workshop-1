@@ -21,11 +21,11 @@ export class PostService {
     return this.myHttp.get(`${this.apiUrl}/posts/${aPostId}`);
   }
 
-  getPostComments(aPostId: number): Observable<Comment[]> {
-    return this.myHttp.get<Comment[]>(`${this.apiUrl}/posts/${aPostId}/comments`);
+  getPostComments(aPostId: number) {
+    return this.myHttp.get(`${this.apiUrl}/posts/${aPostId}/comments`);
   }
 
   createComment(aComment: Comment){
-    return this.myHttp.post(`${this.apiUrl}/posts/${aComment.postId}/comments`, {aComment})
+    return this.myHttp.post(`${this.apiUrl}/posts/${aComment.postId}/comments`, aComment)
   }
 }
